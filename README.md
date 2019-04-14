@@ -1,7 +1,7 @@
 # JSONPlaceholderTests
 Example of using the Cypress automation framework and runner to execute API tests
 
-Installation and running
+## Installation and running
 As this is a one-time upload I've not included a git ignore file, so the solution as provided should 
 contain everything needed apart from a local installation of Cypress and NodeJS. 
 
@@ -14,7 +14,7 @@ npm run cy:run -- --record --spec "comments_tests.spec.js"
 
 The scope of these tests has been three of the primary functions provided by the API rather than the entire API - posts, comments and users. 
 
-Bugs observed: 
+## Bugs observed: 
 Deleting a post, comment OR user returns a 200, however the resource remains in existence if queried again (if it existed prior to the delete request).
 
 A user with the ID 100 is successfully created, however when queried this user appears not to have been successfully added as a resource. 
